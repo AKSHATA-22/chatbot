@@ -1,0 +1,8 @@
+forms:
+  newsletter_form:
+    email:
+    - type: from_text
+
+slots:
+  email:
+    type: text

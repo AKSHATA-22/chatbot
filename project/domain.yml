@@ -1,0 +1,52 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - subscribe
+  - inform
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_ask_email:
+  - text: "What is your email address?"
+  
+  utter_subscribed:
+  - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!"
+  - text: "You're all set! Check your inbox at {email} to confirm your subscription."
+
+forms:
+  newsletter_form:
+    email:
+    - type: from_text
+
+slots:
+  email:
+    type: text
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
