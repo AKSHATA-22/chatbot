@@ -1,2 +1,2 @@
-# chatbot
+# Chatbot
 chatbot using rasa
