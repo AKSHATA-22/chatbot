@@ -91,11 +91,11 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: subscribe
-  examples: |
-    - I want to get the newsletter
-    - Can you send me the newsletter?
-    - Can you sign me up for the newsletter?
+# - intent: subscribe
+#   examples: |
+#     - I want to get the newsletter
+#     - Can you send me the newsletter?
+#     - Can you sign me up for the newsletter?
 
 - intent: inform
   examples: |
@@ -113,14 +113,102 @@ nlu:
     - money
     - fee per year
 
-# - intent: location
-#   examples: |
-#     - Where is fcrit
-#     - location of college
-#     - vashi
-#     - address of fcrit
-#     - Father Agnels Rodrigues location
-#     - how to reach college
+- intent: location
+  examples: |
+    - Where is fcrit
+    - location of college
+    - vashi
+    - address of fcrit
+    - Father Agnels Rodrigues location
+    - how to reach college
 
+- intent: library
+  examples: |
+    - Where is the library portal
+    - library portal link
+    - library page
+    - library login page
+    - library online portal page
 
+- intent: placement
+  examples: |
+    - Where is the placement portal
+    - college placements
+    - on campus
+    - on campus placement
+    - package
+    - training
+    - companies
+
+- intent: login
+  examples: |
+    - login to student portal
+    - exam portal
+    - log in to
+    - how can I log in to my account
+    - student account
+
+- intent: departments
+  examples: |
+    - What are the departments avaliable in the college
+    - courses avaliable
+    - departments
+    - capacity
+    - departwise intake
+    - PhD
+    - Undergraduate Programs
+    - Postgraduate Programs
+    - what are the different courses avaliable  
     
+  
+- intent: student_corner
+  examples: |
+    - code of conduct
+    - Student council
+    - professional bodies
+    - companies-computer society of india 
+    - how can I log in to my account
+    - student account
+    - ieee
+    - student clubs
+
+- intent: alumini
+  examples: | 
+    - Where is the alumini page
+    - alumini page
+    - Alumini network
+    - alumini online login
+
+- intent: nirf
+  examples: | 
+    - nirf
+    - nirf rankings
+    - rankings
+    - fcrit ranking in nirf
+    - alumini online login
+
+- intent: affiliations
+  examples: | 
+    - affiliations
+    - is the college NBA accrediated
+    - is the college NAAC accrediated
+    - is the college IQAC accrediated
+    - what are the affiliations of the college
+
+- intent: research_publication
+  examples: | 
+    - where is the research and publication page
+    - research page
+    - publication page
+    - research projects
+    - reasearch papers
+    - patents page
+    - consultancy projects
+
+- intent: admission
+  examples: | 
+    - how are admissions done here
+    - Undergraduate admissions
+    - Postgraduate admissions
+    - What is the fee structure
+    - What is the in take capacity

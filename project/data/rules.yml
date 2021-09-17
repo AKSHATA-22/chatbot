@@ -12,17 +12,17 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: activate subscribe form
-  steps:
-  - intent: subscribe
-  - action: utter_ask_email
-  - action: newsletter_form
-  - active_loop: newsletter_form
+# - rule: activate subscribe form
+#   steps:
+#   - intent: subscribe
+#   - action: utter_ask_email
+#   - action: newsletter_form
+#   - active_loop: newsletter_form
 
-- rule: submit form
-  condition:
-  - active_loop: newsletter_form
-  steps:
-  - action: newsletter_form
-  - active_loop: null
-  - action: utter_subscribed
+# - rule: submit form
+#   condition:
+#   - active_loop: newsletter_form
+#   steps:
+#   - action: newsletter_form
+#   - active_loop: null
+#   - action: utter_subscribed
