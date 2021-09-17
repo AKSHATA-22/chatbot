@@ -103,3 +103,24 @@ nlu:
     - random@example.com
     - Please send it to anything@example.com
     - Email is something@example.com
+
+- intent: fee_payment
+  examples: |
+    - Where is the fee payment portal
+    - How to pay the fee
+    - fee payment link
+    - fee payment page
+    - money
+    - fee per year
+
+# - intent: location
+#   examples: |
+#     - Where is fcrit
+#     - location of college
+#     - vashi
+#     - address of fcrit
+#     - Father Agnels Rodrigues location
+#     - how to reach college
+
+
+    

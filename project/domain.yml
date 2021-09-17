@@ -10,6 +10,8 @@ intents:
   - bot_challenge
   - subscribe
   - inform
+  - fee_payment
+  - location
 
 responses:
   utter_greet:
@@ -37,6 +39,9 @@ responses:
   utter_subscribed:
   - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!"
   - text: "You're all set! Check your inbox at {email} to confirm your subscription."
+
+  utter_fee_payment:
+  - text: "Please refer this page [Fee Payment](https://www.eduqfix.com/PayDirect/#/student/pay/XxoRsO6mfiXGAnQY1R64lGgQcWtw4tYKPWYLPO8nzoGBvtL6DIe+F9YjQMK1keFr/254)"
 
 forms:
   newsletter_form:
