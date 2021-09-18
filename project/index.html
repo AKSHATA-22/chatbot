@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+<s>
   <script>!(function () {
-  let e = document.createElement("script"),
-    t = document.head || document.getElementsByTagName("head")[0];
-  (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-    // Replace 1.x.x with the version that you want
-    (e.async = !0),
-    (e.onload = () => {
-      window.WebChat.default(
-        {
-          initPayload: '/greet',
-          customData: { language: "en" },
-          socketUrl: "http://localhost:5005",
-          // add other props here
-        },
-        null
-      );
-    }),
-    t.insertBefore(e, t.firstChild);
-})();
-</script>
-</body>
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: '/greet',
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005",
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+  </script>
+
+  <style>
+    .rw-conversation-container .rw-header {
+      background-color: #0080d5;
+    }
+
+
+    .rw-conversation-container .rw-client {
+      background-color: #0080d5 !important;
+    }
+
+    .conversation-container close-button {
+      background-color: #0080d5;
+    }
+
+    .rw-launcher {
+      background-color: #0080d5;
+    }
+  </style>
+
+  </body>
+
 </html>
