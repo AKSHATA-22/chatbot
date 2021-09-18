@@ -96,7 +96,7 @@ responses:
     - text: "You can find the login Links Here [Login](https://fcrit.ac.in/redirectportal)"
 
   utter_studentcorner:
-    - text: "🧑‍🎓 Student Corner Link is : [Student Corner](https://fcrit.ac.in/student_corner) "
+    - text: "🧑‍🎓 Please check in : [Student Corner](https://fcrit.ac.in/student_corner) "
 
   utter_admission:
     - text: "You can check out the details on the 👨‍🎓👩‍🎓 [Admissions Page](https://fcrit.ac.in/admission_home)"
