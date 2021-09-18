@@ -113,3 +113,8 @@ stories:
     steps:
       - intent: manthan
       - action: utter_manthan
+
+  - story: contact_story
+    steps:
+      - intent: contact
+      - action: utter_contact

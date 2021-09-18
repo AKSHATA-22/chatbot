@@ -17,6 +17,16 @@ nlu:
       - goodevening
       - good afternoon
 
+  - intent: contact
+    examples: |
+      - phone no
+      - contact details
+      - email id
+      - college email id
+      - college contact desk
+      - fcrit official number
+      - phone number
+
   - intent: goodbye
     examples: |
       - good afternoon

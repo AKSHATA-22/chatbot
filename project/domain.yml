@@ -24,8 +24,13 @@ intents:
   - research_publication
   - oeuvre_blog
   - manthan
+  - contact
 
 responses:
+  utter_contact:
+    - text: "The Contact Details 📞 of the College are: \n\n\n 📞 Phone No: (022) 27771000, 27662949, 27660619 \n\n\n 📧 Email Id: principal@fcrit.ac.in"
+      image: "https://fcrit.ac.in/img/fcritlogo.png"
+
   utter_greet:
     - text: "Hello👋!! I am a Chatbot. \n\n You can Ask me for page links in the website such as 📑 Newsletter page,📚 Library Login,😃 Fee Payment, etc."
 
