@@ -1,214 +1,236 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
 
-# - intent: subscribe
-#   examples: |
-#     - I want to get the newsletter
-#     - Can you send me the newsletter?
-#     - Can you sign me up for the newsletter?
+  - intent: subscribe
+    examples: |
+      - I want to get the newsletter
+      - Can you send me the newsletter?
+      - Can you sign me up for the newsletter?
+      - Newletter page
+      - newsletter college
+      - rhapsody newsletter
+      - fcrit newsletter
+      - fcrit official newsletter
 
-- intent: inform
-  examples: |
-    - My email is example@example.com
-    - random@example.com
-    - Please send it to anything@example.com
-    - Email is something@example.com
+  - intent: oeuvre_blog
+    examples: |
+      - I want to get the blog
+      - oeuvre blog link
+      - official blog
+      - oeuvre blog
+      - college blog offcial link
+      - fcrit blog
+      - oeuvre blog page
 
-- intent: fee_payment
-  examples: |
-    - Where is the fee payment portal
-    - How to pay the fee
-    - fee payment link
-    - fee payment page
-    - money
-    - fee per year
+  - intent: manthan
+    examples: |
+      - I want to get the magazine link
+      - manthan link
+      - manthan magazine
+      - official magazine of college
+      - college magazine offcial link
 
-- intent: location
-  examples: |
-    - Where is fcrit
-    - location of college
-    - vashi
-    - address of fcrit
-    - Father Agnels Rodrigues location
-    - how to reach college
+  - intent: inform
+    examples: |
+      - My email is example@example.com
+      - random@example.com
+      - Please send it to anything@example.com
+      - Email is something@example.com
 
-- intent: library
-  examples: |
-    - Where is the library portal
-    - library portal link
-    - library page
-    - library login page
-    - library online portal page
+  - intent: fee_payment
+    examples: |
+      - Where is the fee payment portal
+      - How to pay the fee
+      - fee payment link
+      - fee payment page
+      - money
+      - fee per year
 
-- intent: placement
-  examples: |
-    - Where is the placement portal
-    - college placements
-    - on campus
-    - on campus placement
-    - package
-    - training
-    - companies
+  - intent: location
+    examples: |
+      - Where is fcrit
+      - location of college
+      - vashi
+      - address of fcrit
+      - Father Agnels Rodrigues location
+      - how to reach college
 
-- intent: login
-  examples: |
-    - login to student portal
-    - exam portal
-    - log in to
-    - how can I log in to my account
-    - student account
+  - intent: library
+    examples: |
+      - Where is the library portal
+      - library portal link
+      - library page
+      - library login page
+      - library online portal page
 
-- intent: departments
-  examples: |
-    - What are the departments avaliable in the college
-    - courses avaliable
-    - departments
-    - capacity
-    - departwise intake
-    - PhD
-    - Undergraduate Programs
-    - Postgraduate Programs
-    - what are the different courses avaliable  
-    
-  
-- intent: student_corner
-  examples: |
-    - code of conduct
-    - Student council
-    - professional bodies
-    - companies-computer society of india 
-    - how can I log in to my account
-    - student account
-    - ieee
-    - student clubs
+  - intent: placement
+    examples: |
+      - Where is the placement portal
+      - college placements
+      - on campus
+      - on campus placement
+      - package
+      - training
+      - companies
 
-- intent: alumini
-  examples: | 
-    - Where is the alumini page
-    - alumini page
-    - Alumini network
-    - alumini online login
+  - intent: login
+    examples: |
+      - login to student portal
+      - exam portal
+      - log in to
+      - how can I log in to my account
+      - student account
 
-- intent: nirf
-  examples: | 
-    - nirf
-    - nirf rankings
-    - rankings
-    - fcrit ranking in nirf
-    - alumini online login
+  - intent: departments
+    examples: |
+      - What are the departments avaliable in the college
+      - courses avaliable
+      - departments
+      - capacity
+      - departwise intake
+      - PhD
+      - Undergraduate Programs
+      - Postgraduate Programs
+      - what are the different courses avaliable
 
-- intent: affiliations
-  examples: | 
-    - affiliations
-    - is the college NBA accrediated
-    - is the college NAAC accrediated
-    - is the college IQAC accrediated
-    - what are the affiliations of the college
+  - intent: student_corner
+    examples: |
+      - code of conduct
+      - Student council
+      - professional bodies
+      - companies-computer society of india 
+      - how can I log in to my account
+      - student account
+      - ieee
+      - student clubs
 
-- intent: research_publication
-  examples: | 
-    - where is the research and publication page
-    - research page
-    - publication page
-    - research projects
-    - reasearch papers
-    - patents page
-    - consultancy projects
+  - intent: alumini
+    examples: |
+      - Where is the alumini page
+      - alumini page
+      - Alumini network
+      - alumini online login
 
-- intent: admission
-  examples: | 
-    - how are admissions done here
-    - Undergraduate admissions
-    - Postgraduate admissions
-    - What is the fee structure
-    - What is the in take capacity
+  - intent: nirf
+    examples: |
+      - nirf
+      - nirf rankings
+      - rankings
+      - fcrit ranking in nirf
+      - alumini online login
+
+  - intent: affiliations
+    examples: |
+      - affiliations
+      - is the college NBA accrediated
+      - is the college NAAC accrediated
+      - is the college IQAC accrediated
+      - what are the affiliations of the college
+
+  - intent: research_publication
+    examples: |
+      - where is the research and publication page
+      - research page
+      - publication page
+      - research projects
+      - reasearch papers
+      - patents page
+      - consultancy projects
+
+  - intent: admission
+    examples: |
+      - how are admissions done here
+      - Undergraduate admissions
+      - Postgraduate admissions
+      - What is the fee structure
+      - What is the in take capacity

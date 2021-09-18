@@ -1,105 +1,115 @@
-
 version: "2.0"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: subscribe_story
+    steps:
+      - intent: subscribe
+      - action: utter_subscribe
 
-- story: fee payment 1
-  steps:
-  - intent: fee_payment
-  - action: utter_fee_payment
+  - story: oeuvre_blog
+    steps:
+      - intent: oeuvre_blog
+      - action: utter_oeuvre_blog
 
-- story: location of fcrit 1
-  steps:
-  - intent: location
-  - action: utter_location
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: fee payment 1
+    steps:
+      - intent: fee_payment
+      - action: utter_fee_payment
 
-- story: location of fcrit 2
-  steps:
-  - intent: location
-  - action: utter_location
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: location of fcrit 1
+    steps:
+      - intent: location
+      - action: utter_location
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: library
-  steps:
-  - intent: library
-  - action: utter_library
-  
+  - story: location of fcrit 2
+    steps:
+      - intent: location
+      - action: utter_location
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: placement cell
-  steps:
-  - intent: placement
-  - action: utter_placement_cell
+  - story: library
+    steps:
+      - intent: library
+      - action: utter_library
 
-- story: login
-  steps:
-  - intent: login
-  - action: utter_login
-  
-- story: departments
-  steps:
-  - intent: departments
-  - action: utter_departments
+  - story: placement cell
+    steps:
+      - intent: placement
+      - action: utter_placement_cell
 
-- story: alumini
-  steps:
-  - intent: alumini
-  - action: utter_alumini
+  - story: login
+    steps:
+      - intent: login
+      - action: utter_login
 
-- story: nirf
-  steps:
-  - intent: nirf
-  - action: utter_nirf
+  - story: departments
+    steps:
+      - intent: departments
+      - action: utter_departments
 
-- story: admissions
-  steps:
-  - intent: admission
-  - action: utter_admission
+  - story: alumini
+    steps:
+      - intent: alumini
+      - action: utter_alumini
 
-- story: affiliations
-  steps:
-  - intent: affiliations
-  - action: utter_affiliations
-  
-- story: research
-  steps:
-  - intent: research_publication
-  - action: utter_research_publication
+  - story: nirf
+    steps:
+      - intent: nirf
+      - action: utter_nirf
 
-- story: student corner
-  steps:
-  - intent: student_corner
-  - action: utter_studentcorner
- 
- 
+  - story: admissions
+    steps:
+      - intent: admission
+      - action: utter_admission
+
+  - story: affiliations
+    steps:
+      - intent: affiliations
+      - action: utter_affiliations
+
+  - story: research
+    steps:
+      - intent: research_publication
+      - action: utter_research_publication
+
+  - story: student corner
+    steps:
+      - intent: student_corner
+      - action: utter_studentcorner
+
+  - story: manthan_story
+    steps:
+      - intent: manthan
+      - action: utter_manthan

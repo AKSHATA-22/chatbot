@@ -8,7 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  # - subscribe
+  - subscribe
   - inform
   - fee_payment
   - library
@@ -22,10 +22,21 @@ intents:
   - admission
   - alumini
   - research_publication
+  - oeuvre_blog
+  - manthan
 
 responses:
   utter_greet:
-    - text: "Hey! How are you?"
+    - text: "Hello👋!! I am a Chatbot. \n\n You can Ask me for page links in the website such as 📑 Newsletter page,📚 Library Login,😃 Fee Payment, etc."
+
+  # utter_greet2:
+  #   - text: ""
+
+  utter_manthan:
+    - text: "The Official Magazine of our college is [Manthan](https://fcrit.ac.in/manthan)"
+
+  utter_oeuvre_blog:
+    - text: "The Official Blog of College is 📑 [OEUVRE](blog.fcrit.ac.in)"
 
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
@@ -46,12 +57,11 @@ responses:
   # utter_ask_email:
   # - text: "What is your email address?"
 
-  # utter_subscribed:
-  # - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!"
-  # - text: "You're all set! Check your inbox at {email} to confirm your subscription."
+  utter_subscribe:
+    - text: "The Fr.C.R.I.T's Official Newsletter is 📩 [Rhapsody](https://fcrit.ac.in/news_letters)"
 
   utter_fee_payment:
-    - text: "Please refer the [Fee Payment](https://www.eduqfix.com/PayDirect/#/student/pay/XxoRsO6mfiXGAnQY1R64lGgQcWtw4tYKPWYLPO8nzoGBvtL6DIe+F9YjQMK1keFr/254) Page 💰"
+    - text: "Please refer the [Fee Payment](https://www.eduqfix.com/PayDirect/#/student/pay/XxoRsO6mfiXGAnQY1R64lGgQcWtw4tYKPWYLPO8nzoGBvtL6DIe+F9YjQMK1keFr/254) Page"
 
   utter_placement_cell:
     - text: "You can refer the [Placement Cell](https://fcrit.ac.in/placement_home/) page 🥇"
