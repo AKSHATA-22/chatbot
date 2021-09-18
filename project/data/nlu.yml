@@ -192,6 +192,8 @@ nlu:
       - how can I log in to my account
       - student account
       - ieee
+      - college facilities
+      - facilities of the college
       - student clubs
 
   - intent: alumini
